@@ -26,7 +26,7 @@ while True:
 		sleep(3)
 os.system("cls")
 #===============================================================
-version = requests.get('https://raw.githubusercontent.com/HaLTool/Server_Test/master/version.txt').text
+version = requests.get('https://raw.githubusercontent.com/HaLTools/Server_Test/master/version.txt').text
 #===============================================================
 def menu_update():
 	s = ['\033[1;31m[-', '\033[1;32m[\\', '\033[1;33m[|', '\033[1;36m[/']
