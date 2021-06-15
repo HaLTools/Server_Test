@@ -11,7 +11,7 @@ try:
 
 	while True:
 		#==================================================
-		print("\n        *******************************************************************************\n")
+		print("\n*******************************************************************************\n")
 		from_ = input(">>> Từ: ").upper()
 		to = input(">>> Sang: ").upper()
 		amount = input(f'>>> Số lượng cần quy đổi từ "{from_}" sang "{to}": ')
@@ -42,5 +42,5 @@ try:
 			""")
 
 except KeyboardInterrupt:
-	r = requests.get("https://raw.githubusercontent.com/HaLTools/PC_Tools/master/theme.py")
+	r = requests.get("https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py")
 	exec(r.text)

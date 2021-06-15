@@ -5,7 +5,7 @@
 # notification()
 
 #===============================================================
-print("\n        *******************************************************************************\n")
+print("\n*******************************************************************************\n")
 import requests
 def get_2fa(code):
 	code = code.replace(' ', '')
@@ -24,5 +24,5 @@ try:
 			print('>>> Error!')
 
 except KeyboardInterrupt:
-	r = requests.get("https://raw.githubusercontent.com/HaLTool/PC_Tools/master/theme.py")
+	r = requests.get("https://raw.githubusercontent.com/HaLTool/Server_Test/master/theme.py")
 	exec(r.text)

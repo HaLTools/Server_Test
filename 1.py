@@ -13,7 +13,7 @@ try:
     ua = UserAgent()
     count = 1
     #===============================================================
-    print('''\n        *******************************************************************************\n
+    print('''\n*******************************************************************************\n
 >>> Chú ý: Mỗi 1 phút sẽ buff được 1 View, vì nếu quá nhanh sẽ làm tăng tỷ lệ thoát 
     trang, ảnh hưởng nghiêm trọng đến SEO, vậy nên nếu muốn nhanh các bạn nên chạy 
     một lúc nhiều tab để mang lại hiệu quả cao nhất có thể nhé!
@@ -39,5 +39,5 @@ try:
             buff_view(url, ua)
 
 except KeyboardInterrupt:
-    r = requests.get("https://raw.githubusercontent.com/HaLTools/PC_Tools/master/theme.py")
+    r = requests.get("https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py")
     exec(r.text)

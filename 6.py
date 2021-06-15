@@ -15,7 +15,7 @@ except:
 
 try:
 	from pytube import YouTube
-	print("\n        *******************************************************************************\n")
+	print("\n*******************************************************************************\n")
 	urls = input('>>> Nhập những Url Video YouTube muốn tải: ')
 	urls = " ".join(urls.split())
 	urls = urls.split()
@@ -32,6 +32,6 @@ try:
 			print('>>> Download Fail!')
 
 except KeyboardInterrupt:
-    r = requests.get("https://raw.githubusercontent.com/HaLTools/PC_Tools/master/theme.py")
+    r = requests.get("https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py")
     exec(r.text)
 

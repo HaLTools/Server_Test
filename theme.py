@@ -26,7 +26,7 @@ while True:
 		sleep(3)
 os.system("cls")
 #===============================================================
-version = requests.get('https://raw.githubusercontent.com/HaLTool/PC_Tools/master/version.txt').text
+version = requests.get('https://raw.githubusercontent.com/HaLTool/Server_Test/master/version.txt').text
 #===============================================================
 def menu_update():
 	s = ['\033[1;31m[-', '\033[1;32m[\\', '\033[1;33m[|', '\033[1;36m[/']
@@ -53,28 +53,28 @@ try:
 	# Bắt đầu hiển thị theme
 	print(f'''\033[1;32m
 
-				 /$$   /$$           /$$
-				| $$  | $$          | $$
-				| $$  | $$  /$$$$$$ | $$
-				| $$$$$$$$ |____  $$| $$
-				| $$__  $$  /$$$$$$$| $$
-				| $$  | $$ /$$__  $$| $$
-				| $$  | $$|  $$$$$$$| $$$$$$$$
-				|__/  |__/ \\_______/|________/
+			 /$$   /$$           /$$
+			| $$  | $$          | $$
+			| $$  | $$  /$$$$$$ | $$
+			| $$$$$$$$ |____  $$| $$
+			| $$__  $$  /$$$$$$$| $$
+			| $$  | $$ /$$__  $$| $$
+			| $$  | $$|  $$$$$$$| $$$$$$$$
+			|__/  |__/ \\_______/|________/
 
-	*******************************************************************************
-					Version: {version}
-	-------------------------------------------------------------------------------
+*******************************************************************************
+				Version: {version}
+-------------------------------------------------------------------------------
 				CÁC CHẾ ĐỘ CHẠY CỦA HaL TOOLS
-	-------------------------------------------------------------------------------
-		[1]: Tăng Views cho Website/Blog
-		[2]: Tăng Votes Widget Pack cho Website/Blog
-		[3]: Get mã 2fa Facebook
-		[4]: Check camera bị hổng bảo mật
-		[5]: Máy tính quy đổi tiền điện tử Online
-		[6]: Tải Video trên YouTube
-		[a]: About Us
-	*******************************************************************************
+-------------------------------------------------------------------------------
+	[1]: Tăng Views cho Website/Blog
+	[2]: Tăng Votes Widget Pack cho Website/Blog
+	[3]: Get mã 2fa Facebook
+	[4]: Check camera bị hổng bảo mật
+	[5]: Máy tính quy đổi tiền điện tử Online
+	[6]: Tải Video trên YouTube
+	[a]: About Us
+*******************************************************************************
 	''')
 
 	list_regime = ['a','1','2','3','4','5','6']
@@ -87,7 +87,7 @@ try:
 		else:
 			break
 	def regimes(hal):
-		url = f"https://raw.githubusercontent.com/HaLTools/PC_Tools/master/{hal}.py"
+		url = f"https://raw.githubusercontent.com/HaLTools/Server_Test/master/{hal}.py"
 		r = requests.get(url)
 		exec(r.text)
 	#=============================================

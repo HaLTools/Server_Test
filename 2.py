@@ -13,7 +13,7 @@ try:
     ua = UserAgent()
     count = 1
     #===============================================================
-    print("\n        *******************************************************************************\n")
+    print("\n*******************************************************************************\n")
     print(">>> Đăng nhập vào Widget Pack sẽ thấy phần ID phía góc trái cạnh dấu 3 gạch, CHỈ LẤY PHẦN SỐ")
     you_id = int(input(">>> Nhập ID trang Widget Pack của bạn: "))
     #===============================================================
@@ -81,5 +81,5 @@ try:
             buff_star(url, you_id, chan, star, ua)
 
 except KeyboardInterrupt:
-    r = requests.get("https://raw.githubusercontent.com/HaLTools/PC_Tools/master/theme.py")
+    r = requests.get("https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py")
     exec(r.text)

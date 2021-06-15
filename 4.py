@@ -10,7 +10,7 @@ try:
     import re, os, sys, requests
     from os import system
     from time import sleep
-    print("\n        *******************************************************************************\n")
+    print("\n*******************************************************************************\n")
     print(">>> Chọn quốc gia bạn muốn check camera")
     print("""
 01. Russian Federation
@@ -404,5 +404,5 @@ try:
     print("\n>>> Tất cả IP bị lộ đều được lưu tại file logs.txt")
 
 except KeyboardInterrupt:
-    r = requests.get("https://raw.githubusercontent.com/HaLTools/PC_Tools/master/theme.py")
+    r = requests.get("https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py")
     exec(r.text)
