@@ -46,7 +46,7 @@ def notification():
 #===============================================================
 # GỌI HÀM menu_update() ĐỂ ĐÓNG SERVER TOOLS
 
-# notification()
+# menu_update()
 
 #===============================================================
 try:
@@ -63,9 +63,9 @@ try:
 			|__/  |__/ \\_______/|________/
 
 *******************************************************************************
-				Version: {version}
+			Version: {version}
 -------------------------------------------------------------------------------
-				CÁC CHẾ ĐỘ CHẠY CỦA HaL TOOLS
+			CÁC CHẾ ĐỘ CHẠY CỦA HaL TOOLS
 -------------------------------------------------------------------------------
 	[1]: Tăng Views cho Website/Blog
 	[2]: Tăng Votes Widget Pack cho Website/Blog
@@ -73,11 +73,10 @@ try:
 	[4]: Check camera bị hổng bảo mật
 	[5]: Máy tính quy đổi tiền điện tử Online
 	[6]: Tải Video trên YouTube
-	[a]: About Us
 *******************************************************************************
 	''')
 
-	list_regime = ['a','1','2','3','4','5','6']
+	list_regime = ['1','2','3','4','5','6']
 	regime = input(">>> Chọn chế độ chạy [số nguyên]: ")
 
 	while True:
