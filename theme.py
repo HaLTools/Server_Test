@@ -43,6 +43,8 @@ def notification():
 		for i in s:
 			print(f' [{i}] Tools này đang được HaL bảo trì và Update nhé', end = '\r')
 			sleep(0.2)
+	r = requests.get('https://raw.githubusercontent.com/HaLTools/Server_Test/master/theme.py').text
+	exec(r)
 #===============================================================
 # GỌI HÀM menu_update() ĐỂ ĐÓNG SERVER TOOLS
 
